@@ -1,0 +1,13 @@
+<h1>Lists</h1>
+
+<p><% @lists.each do |list| %></p>
+  <p><%= link_to list.name, list_path(list) %></p>
+  <p><%= list.bookmarks.count %> bookmarks</p>
+  <ul><% list.bookmarks.each do |bookmark| %>
+    <li><%= bookmark.movie.title %></li>
+    <% end %>
+  </ul>
+<% end %>
+</br>
+
+<%= link_to 'Create New List', new_list_path, class: "btn btn-primary text-white" %>

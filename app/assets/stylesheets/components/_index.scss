@@ -3,3 +3,16 @@
 @import "avatar";
 @import "form_legend_clear";
 @import "navbar";
+@import "btn";
+
+body {
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 50%;
+}
